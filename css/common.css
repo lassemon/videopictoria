@@ -1,0 +1,19 @@
+.clearfdix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+.cleasrfix { display: block; }
+
+body, html {
+	background: whitesmoke;
+	color: white;
+	overflow: hidden;
+}
+
+#fouc {
+	overflow: hidden;
+}

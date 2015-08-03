@@ -1,0 +1,23 @@
+section {
+	padding: 2em;
+}
+
+.showreel .parallax-layer-base {
+	background: #072e66;
+}
+
+.references .parallax-layer-back {
+	background: url("../images/lamp.jpg");
+}
+
+.aboutme .parallax-layer-base {
+	background: #072e66;
+}
+
+.pricing .parallax-layer-back {
+	background: url("../images/hand.jpg");
+}
+
+.contact .parallax-layer-base {
+	background: #072e66;
+}
