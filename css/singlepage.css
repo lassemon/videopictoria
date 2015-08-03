@@ -1,3 +1,11 @@
+.sticky-header {
+    position: fixed;
+    width: 100%;
+    z-index: 1001;
+    top: 0;
+    left: 0;
+}
+
 section {
 	padding: 2em;
 }

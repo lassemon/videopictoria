@@ -15,12 +15,9 @@
  */
 
 get_header(); ?>
-<div class="debug">
-    <label><input type="checkbox"> Debug</label>
-  </div>
 <div id="fouc">
     <div class="content-area">
-        <div class="showreel parallax-group clearfix">
+        <div id="showreel" class="showreel parallax-group clearfix">
             <div class="parallax-layer parallax-layer-base">
                 <section class="clearfix">
                     <?php
@@ -41,7 +38,7 @@ get_header(); ?>
             </div>
         </div>
 
-        <div class="references parallax-group clearfix">
+        <div id="references" class="references parallax-group clearfix">
             <div class="parallax-layer parallax-layer-base">
                 <section class="clearfix">
                     <?php
@@ -60,10 +57,10 @@ get_header(); ?>
                     ?>
                 </section>
             </div>
-            <div class="parallax-layer parallax-layer-back">Background references</div>
+            <div class="parallax-layer parallax-layer-back"></div>
         </div>
 
-        <div class="aboutme parallax-group clearfix">
+        <div id="aboutme" class="aboutme parallax-group clearfix">
             <div class="parallax-layer parallax-layer-base">
                 <section class="clearfix">
                     <?php
@@ -82,10 +79,10 @@ get_header(); ?>
                     ?>
                 </section>
             </div>
-            <div class="parallax-layer parallax-layer-back">Background aboutme</div>
+            <div class="parallax-layer parallax-layer-back"></div>
         </div>
 
-        <div class="pricing parallax-group clearfix">
+        <div id="pricing" class="pricing parallax-group clearfix">
             <div class="parallax-layer parallax-layer-base">
                 <section class="clearfix">
                     <?php
@@ -104,10 +101,10 @@ get_header(); ?>
                     ?>
                 </section>
             </div>
-            <div class="parallax-layer parallax-layer-back">Background pricing</div>
+            <div class="parallax-layer parallax-layer-back"></div>
         </div>
 
-        <div class="contact parallax-group clearfix">
+        <div id="contact" class="contact parallax-group clearfix">
             <div class="parallax-layer parallax-layer-base">
                 <section class="clearfix">
                     <?php
@@ -129,13 +126,4 @@ get_header(); ?>
         </div>
     </div>
 </div>
-<script>
-    var debugInput = document.querySelector("input");
-    function updateDebugState() {
-        if(document.body.classList){
-            document.body.classList.toggle('debug-on', debugInput.checked);
-        }
-    }
-    debugInput.addEventListener("click", updateDebugState);
-  </script>
 <?php get_footer(); ?>

@@ -32,5 +32,11 @@ function custom_enqueue_styles(){
 }
 add_action( 'wp_enqueue_scripts', 'custom_enqueue_styles', 15 );
 
+function scripts(){
+	if(is_front_page()){
+		wp_enqueue_script('frontpage-script', get_stylesheet_directory_uri() . '/js/stickymenu.js', array('jquery'), '20151601', true);
+	}
+}
+add_action('wp_enqueue_scripts', 'scripts', 20);
 
 ?>
