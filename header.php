@@ -13,6 +13,7 @@
   	<meta name="description" content="">
  	<meta name="viewport" content="width=device-width, initial-scale=1">
  	<?php wp_head(); ?>
+ 	<link rel="stylesheet" type="text/css" href="http://fonts.googleapis.com/css?family=Vollkorn">
 </head>
 
 <body>

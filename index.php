@@ -19,7 +19,7 @@ get_header(); ?>
     <div class="content-area">
         <div id="showreel" class="showreel parallax-group clearfix">
             <div class="parallax-layer parallax-layer-base">
-                <section class="clearfix">
+                <section class="parallax-layer-section clearfix">
                     <?php
                         $query = new WP_query('pagename=showreel');
 
@@ -40,7 +40,7 @@ get_header(); ?>
 
         <div id="references" class="references parallax-group clearfix">
             <div class="parallax-layer parallax-layer-base">
-                <section class="clearfix">
+                <section class="parallax-layer-section clearfix">
                     <?php
                         $query = new WP_query('pagename=references');
 
@@ -62,7 +62,7 @@ get_header(); ?>
 
         <div id="aboutme" class="aboutme parallax-group clearfix">
             <div class="parallax-layer parallax-layer-base">
-                <section class="clearfix">
+                <section class="parallax-layer-section clearfix">
                     <?php
                         $query = new WP_query('pagename=aboutme');
 
@@ -84,7 +84,7 @@ get_header(); ?>
 
         <div id="pricing" class="pricing parallax-group clearfix">
             <div class="parallax-layer parallax-layer-base">
-                <section class="clearfix">
+                <section class="parallax-layer-section clearfix">
                     <?php
                         $query = new WP_query('pagename=pricing');
 
@@ -106,7 +106,7 @@ get_header(); ?>
 
         <div id="contact" class="contact parallax-group clearfix">
             <div class="parallax-layer parallax-layer-base">
-                <section class="clearfix">
+                <section class="parallax-layer-section clearfix">
                     <?php
                         $query = new WP_query('pagename=contact');
 

@@ -10,9 +10,18 @@
 
 body, html {
 	background: whitesmoke;
-	color: white;
+	color: whitesmoke;
 	overflow: hidden;
+
+	font-family: 'Vollkorn' sans-serif;
+	font-size: 24px;
+
+    -ms-text-size-adjust: 100%;
+    -moz-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
 }
+
+
 
 #fouc {
 	overflow: hidden;

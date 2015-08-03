@@ -6,8 +6,12 @@
     left: 0;
 }
 
-section {
+.parallax-layer-section  {
 	padding: 2em;
+	position: relative;
+  	top: 50vh;
+  	transform: translateY(-50%);
+	text-align: center;
 }
 
 .content-area {
@@ -15,7 +19,7 @@ section {
 }
 
 .showreel .parallax-layer-base {
-	background: #072e66;
+	background: #05142b;
 }
 
 .references .parallax-layer-back {
@@ -23,7 +27,7 @@ section {
 }
 
 .aboutme .parallax-layer-base {
-	background: #072e66;
+	background: #05142b;
 }
 
 .pricing .parallax-layer-back {
@@ -31,5 +35,5 @@ section {
 }
 
 .contact .parallax-layer-base {
-	background: #072e66;
+	background: #05142b;
 }
