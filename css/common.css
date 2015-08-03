@@ -1,4 +1,4 @@
-.clearfdix:after {
+.cleaarfix:after {
 	visibility: hidden;
 	display: block;
 	font-size: 0;
@@ -9,9 +9,10 @@
 .cleasrfix { display: block; }
 
 body, html {
+    overflow:hidden;
+
 	background: whitesmoke;
 	color: whitesmoke;
-	overflow: hidden;
 
 	font-family: 'Vollkorn' sans-serif;
 	font-size: 24px;

@@ -37,3 +37,101 @@
 .contact .parallax-layer-base {
 	background: #05142b;
 }
+
+
+/* MENU AREA */
+
+.menu-stickymenu-container {
+	right: 17px;
+}
+
+.menu-stickymenu-container:not(.sticky-header) {
+    position: fixed;
+    width: 100%;
+    z-index: 1001;
+    top: 0;
+}
+
+#menu-stickymenu,
+#menu-stickymenu li,
+#menu-stickymenu li:hover,
+#menu-stickymenu a,
+#menu-stickymenu a:hover {
+    background: black;
+    color: white;
+    filter: none; /* IE */
+    text-decoration: none;
+    text-align: center;
+}
+
+#menu-stickymenu a {
+    border: 0;
+    text-shadow: none;
+    position: static;
+    font-size: 1em;
+}
+
+#menu-stickymenu a:hover {
+    color: #d39b00;
+}
+
+#menu-stickymenu li {
+    float: none;
+    position: static;
+    display: inline-block;
+    padding: 2em;
+}
+
+#menu-stickymenu li:hover {
+}
+
+.show-menu {
+    text-decoration: none;
+    background: black;
+    color: white;
+    padding: .5em .5em .5em 1em;
+    font-size: 30px;
+    display: none;
+}
+
+/*Hide checkbox*/
+input#show-menu[type=checkbox] {
+    display: none;
+}
+
+/*Show menu when invisible checkbox is checked*/
+input#show-menu[type=checkbox]:checked ~ #menu-stickymenu {
+    display: block;
+}
+
+input#show-menu[type=checkbox]:checked ~ #menu-stickymenu li a {
+    text-align: left;
+}
+
+/* MENU AREA RESPONSIVE */
+
+@media screen and (max-width : 1100px) {
+    /*Make dropdown links appear inline*/
+    #menu-stickymenu {
+        position: static;
+        display: none;
+    }
+    #menu-stickymenu li + li {
+        border-left: 0;
+    }
+    /*Create vertical spacing*/
+    #menu-stickymenu li {
+        padding: 0;
+        border-bottom: 1px solid black;
+        float: none;
+    }
+
+    /*Make all menu links full width*/
+    #menu-stickymenu li, #menu-stickymenu li a {
+        width: 100%;
+    }
+    /*Display 'show menu' link*/
+    .show-menu {
+        display:block;
+    }
+}
