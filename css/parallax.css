@@ -6,6 +6,7 @@
   overflow-y: auto;
   -webkit-perspective: 300px;
   perspective: 300px;
+  -moz-perspective-origin: 101.5% 50% 0;
   -webkit-perspective-origin-x: 100%;
   perspective-origin-x: 100%;
 }
@@ -25,6 +26,7 @@
   right: 0;
   bottom: 0;
   -webkit-transform-origin-x: 100%;
+  -moz-transform-origin: 50% 50% 0;
   transform-origin-x: 100%;
 }
 
@@ -41,8 +43,9 @@
 }
 
 .parallax-layer-back {
-  -webkit-transform: translateZ(-295px) scale(2);
-  transform: translateZ(-295px) scale(2);
+  -webkit-transform: translateZ(-270px) scale(2);
+  -moz-transform: translateZ(-270px) scale(2);
+  transform: translateZ(-270px) scale(2);
   z-index: 3;
 }
 
