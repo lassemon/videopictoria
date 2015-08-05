@@ -1,11 +1,12 @@
 
-.content-area {
+.parallax {
   height: 500px; /* fallback for older browsers */
   height: 100vh;
   overflow-x: hidden;
   overflow-y: auto;
   perspective: 300px;
   -moz-perspective-origin: 101.5% 50% 0;
+  -webkit-perspective-origin-x: 100%;
   perspective-origin-x: 100%;
 }
 
@@ -23,7 +24,14 @@
   right: 0;
   bottom: 0;
   -moz-transform-origin: 50% 50% 0;
+  -webkit-transform-origin-x: 100%;
   transform-origin-x: 100%;
+}
+
+.parallax-layer-section {
+  padding: 2em;
+  position: relative;
+  text-align: center;
 }
 
 .parallax-layer-fore {

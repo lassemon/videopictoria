@@ -16,17 +16,17 @@
 
 get_header(); ?>
 <div id="fouc">
-    <div class="content-area">
-        <div id="showreel" class="showreel parallax-group clearfix">
+    <div class="content-area parallax">
+        <section id="showreel" class="showreel parallax-group clearfix">
             <div class="parallax-layer parallax-layer-base">
-                <section class="parallax-layer-section clearfix">
+                <div class="parallax-layer-section vertical-center clearfix">
                     <?php
                         $query = new WP_query('pagename=showreel');
 
                         if( $query->have_posts() ){
                             while( $query->have_posts() ){
                                 $query->the_post();
-                                echo '<div class="entry-content">';
+                                echo '<div class="entry-content clearfix">';
                                 the_content();
                                 echo '</div>';
                             }
@@ -34,20 +34,20 @@ get_header(); ?>
 
                         wp_reset_postdata();
                     ?>
-                </section>
+                </div>
             </div>
-        </div>
+        </section>
 
-        <div id="references" class="references parallax-group clearfix">
+        <section id="references" class="references parallax-group clearfix">
             <div class="parallax-layer parallax-layer-base">
-                <section class="parallax-layer-section clearfix">
+                <div class="parallax-layer-section clearfix">
                     <?php
                         $query = new WP_query('pagename=references');
 
                         if( $query->have_posts() ){
                             while( $query->have_posts() ){
                                 $query->the_post();
-                                echo '<div class="entry-content">';
+                                echo '<div class="entry-content vertical-center clearfix">';
                                 the_content();
                                 echo '</div>';
                             }
@@ -55,21 +55,21 @@ get_header(); ?>
 
                         wp_reset_postdata();
                     ?>
-                </section>
+                </div>
             </div>
             <div class="parallax-layer parallax-layer-back"></div>
-        </div>
+        </section>
 
-        <div id="aboutme" class="aboutme parallax-group clearfix">
+        <section id="aboutme" class="aboutme parallax-group clearfix">
             <div class="parallax-layer parallax-layer-base">
-                <section class="parallax-layer-section clearfix">
+                <div class="parallax-layer-section clearfix">
                     <?php
                         $query = new WP_query('pagename=aboutme');
 
                         if( $query->have_posts() ){
                             while( $query->have_posts() ){
                                 $query->the_post();
-                                echo '<div class="entry-content">';
+                                echo '<div class="entry-content vertical-center clearfix">';
                                 the_content();
                                 echo '</div>';
                             }
@@ -77,21 +77,21 @@ get_header(); ?>
 
                         wp_reset_postdata();
                     ?>
-                </section>
+                </div>
             </div>
             <div class="parallax-layer parallax-layer-back"></div>
-        </div>
+        </section>
 
-        <div id="pricing" class="pricing parallax-group clearfix">
+        <section id="pricing" class="pricing parallax-group clearfix">
             <div class="parallax-layer parallax-layer-base">
-                <section class="parallax-layer-section clearfix">
+                <div class="parallax-layer-section vertical-center clearfix">
                     <?php
                         $query = new WP_query('pagename=pricing');
 
                         if( $query->have_posts() ){
                             while( $query->have_posts() ){
                                 $query->the_post();
-                                echo '<div class="entry-content">';
+                                echo '<div class="entry-content clearfix">';
                                 the_content();
                                 echo '</div>';
                             }
@@ -99,21 +99,21 @@ get_header(); ?>
 
                         wp_reset_postdata();
                     ?>
-                </section>
+                </div>
             </div>
             <div class="parallax-layer parallax-layer-back"></div>
-        </div>
+        </section>
 
-        <div id="contact" class="contact parallax-group clearfix">
+        <section id="contact" class="contact parallax-group clearfix">
             <div class="parallax-layer parallax-layer-base">
-                <section class="parallax-layer-section clearfix">
+                <div class="parallax-layer-section vertical-center clearfix">
                     <?php
                         $query = new WP_query('pagename=contact');
 
                         if( $query->have_posts() ){
                             while( $query->have_posts() ){
                                 $query->the_post();
-                                echo '<div class="entry-content">';
+                                echo '<div class="entry-content clearfix">';
                                 the_content();
                                 echo '</div>';
                             }
@@ -121,9 +121,9 @@ get_header(); ?>
 
                         wp_reset_postdata();
                     ?>
-                </section>
+                </div>
             </div>
-        </div>
+        </section>
     </div>
 </div>
 <?php get_footer(); ?>
