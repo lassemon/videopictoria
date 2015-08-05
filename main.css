@@ -11,7 +11,4 @@ Tags:
 Text Domain: pictoria
 */
 
-@import url("css/reset.css");
-@import url("css/common.css");
-@import url("css/singlepage.css");
-@import url("css/parallax.css");
+@import url(".tmp/bundle.css");

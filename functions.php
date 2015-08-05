@@ -28,7 +28,7 @@ remove_action('wp_head', 'adjacent_posts_rel_link', 10, 0);
 
 
 function custom_enqueue_styles(){
- 	wp_enqueue_style('common-styles', get_stylesheet_directory_uri() . '/style.css');
+ 	wp_enqueue_style('common-styles', get_stylesheet_directory_uri() . '/main.css');
 }
 add_action( 'wp_enqueue_scripts', 'custom_enqueue_styles', 15 );
 
