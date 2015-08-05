@@ -1,5 +1,5 @@
 var gulp = require('gulp');
 
 gulp.task('build', function() {
-  gulp.start('styles');
+  gulp.start('js', 'styles');
 });
