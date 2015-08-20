@@ -11,6 +11,15 @@
 	background: $dark-blue;
 }
 
+.showreel .parallax-layer-section {
+	top: 55vh;  /*account for navigation bar in the showreel section */
+}
+
+.showreel .entry-content {
+	margin: 0 auto;
+	max-width: 1280px;
+}
+
 .references .parallax-layer-back {
 	background: url("../images/lamp.jpg");
 }
